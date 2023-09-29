@@ -1,0 +1,29 @@
+<!--
+  Generated template for the PlayerInfoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>{{playerName}}'s Info</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-card>
+        <img src="{{pic}}">
+        <ion-card-title><b>{{playerName}}</b></ion-card-title>
+        <ion-card-content>
+          <ion-list>
+          <ion-item><p align="right"><b>Plays: </b>{{playerPos}}</p></ion-item>
+          <ion-item><p align="right"><b>Grade: </b>{{playerGrade}}</p></ion-item>
+          <ion-item><p align="right"><b>Age: </b>{{playerAge}}</p></ion-item>
+          <ion-item><p align="right"><b>Color Group: </b>{{playerColor}}</p></ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+</ion-content>

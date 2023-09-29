@@ -1,0 +1,37 @@
+<!--
+  Generated template for the FootballShoppingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>My Shopping List</ion-title>
+  <ion-buttons end><button ion-button icon-only (click)="openModal()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+    </ion-buttons>
+    <ion-buttons left>
+    <button ion-button icon-only (click)="return()">
+      <ion-icon name="arrow-round-back"></ion-icon>
+      </button>
+  </ion-buttons>
+</ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-list>
+<ion-item-sliding *ngFor="let item of shoppingItems | async">
+  <ion-item>
+    <h2>{{item.Name}}</h2>
+    <p>Purchase {{item.Quantity}} pieces from {{item.Store}}</p>
+  </ion-item>
+  <ion-item-options side="right">
+    <button ion-button color="danger" (click)="deleteItem(item)" icon-only><ion-icon name="trash"></ion-icon></button>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+</ion-content>

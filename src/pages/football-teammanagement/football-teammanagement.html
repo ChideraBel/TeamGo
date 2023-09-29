@@ -1,0 +1,23 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>My Team</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-card (click) = "goToFirstTeam()" color="light">
+  <ion-card-title><b>My First Team</b></ion-card-title>
+    <img src="assets/imgs/FirstTeam.jpg">
+    <ion-card-content><b>Choose which players are on the first team or not.</b></ion-card-content>
+</ion-card>
+
+<ion-card (click) = "goToFormation()" color="light">
+  <ion-card-title><b>My Formation</b></ion-card-title>
+  <img src="assets/imgs/Formation.jpg">
+  <ion-card-content><b>The formation that you have decided to use for your team for each game.</b></ion-card-content>
+</ion-card>
+
+</ion-content>
